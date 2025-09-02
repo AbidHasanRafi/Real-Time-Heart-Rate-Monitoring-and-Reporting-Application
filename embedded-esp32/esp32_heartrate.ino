@@ -8,8 +8,8 @@
 #include "heartRate.h"
 
 // WiFi credentials
-const char* ssid = "TATA5G";
-const char* password = "Passwordnao";
+const char* ssid = "";
+const char* password = "";
 
 // Web server
 WebServer server(80);
