@@ -41,8 +41,6 @@ The Real-Time Heart Rate Monitoring and Reporting System is designed as a compre
 
 ## System Architecture, Circuit Diagrams & Connections
 
-![Circuit Diagram](https://raw.githubusercontent.com/AbidHasanRafi/Real-Time-Heart-Rate-Monitoring-and-Reporting-Application/main/assets/circuit.png)
-
 The system architecture consists of tightly coupled hardware and software components. On the hardware side, the MAX30102 optical heart rate sensor captures raw photoplethysmography signals, which are processed by the ESP32 microcontroller. The ESP32 is responsible not only for handling sensor data but also for managing WiFi connectivity and hosting a web server for remote access. To complement this, an Arduino UNO is employed to manage an OLED display, ensuring that the user receives immediate feedback locally. Communication between ESP32 and Arduino occurs through a UART interface, while the OLED display (SSD1306) connects to the Arduino via I2C for real-time visualization.
 
 ### Hardware Architecture
@@ -118,6 +116,8 @@ GND       ──>  GND
 
 ### Complete Circuit Diagram
 
+![Circuit Diagram](https://raw.githubusercontent.com/AbidHasanRafi/Real-Time-Heart-Rate-Monitoring-and-Reporting-Application/main/assets/circuit.png)
+
 ```
                     ┌─────────────┐
                     │   MAX30102  │
@@ -139,6 +139,8 @@ GND       ──>  GND
                     │  (SSD1306)  │
                     └─────────────┘
 ```
+
+The complete circuit design for this heart rate monitoring system is also available online for interactive viewing and exploration. You can access it via [CirKit Designer](https://app.cirkitdesigner.com/project/c3ec1897-5516-46ba-b142-87d72bafb8d2), which allows you to examine the connections, component placement, and signal flow in detail. This online version provides an easy way to understand the hardware setup without physically assembling the components, making it useful for reference, learning, or simulation purposes.
 
 ## System Data and Communication Flow
 
