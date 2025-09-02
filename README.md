@@ -85,7 +85,7 @@ GPIO 22   ──>  SCL
 GND       ──>  GND
 ```
 
-**⚠️ Important Notes:**
+** Important Notes:**
 - Use 3.3V only (5V may damage sensor)
 - Add 4.7kΩ pull-up resistors on SDA/SCL if needed
 - Keep wires short to minimize I2C noise
@@ -100,7 +100,7 @@ GPIO 17   <──  Pin 11 (TX)
 GND       ──>  GND
 ```
 
-**💡 Communication Protocol:**
+** Communication Protocol:**
 - Baud Rate: 9600
 - Data Format: `IR=<value>,BPM=<value>,AvgBPM=<value>,Finger:<status>`
 - Update Interval: 1 second
